@@ -1,0 +1,30 @@
+:root {
+  --text-primary: #eef7ff;
+  --text-soft: #b9cddb;
+  --text-muted: #d3e2ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(165deg, #17232d 0%, #284353 50%, #355f6f 100%);
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+.stage {
+  position: relative;
+  z-index: 1;
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  padding: 40px 20px 48px;
+}

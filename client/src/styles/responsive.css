@@ -1,0 +1,40 @@
+@media (max-width: 980px) {
+  .grid-panels,
+  .feature-strip,
+  .service-sections,
+  .sub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel,
+  .subpage-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-main-content {
+    width: calc(100vw - 24px);
+    gap: 14px;
+  }
+
+  .stage {
+    padding: 24px 10px 30px;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-transition.route-enter,
+  .route-transition.route-exit {
+    animation-duration: 1ms !important;
+  }
+}

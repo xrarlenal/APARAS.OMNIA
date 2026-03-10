@@ -1,0 +1,50 @@
+# 创建 .gitignore 文件
+@"
+# 依赖目录 - 必须忽略
+node_modules/
+/server/node_modules/
+/client/node_modules/
+**/node_modules/
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+.env.production
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 构建产物
+/dist
+/build
+/out
+/server/dist
+/client/build
+/client/dist
+/client/out
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 操作系统文件
+Thumbs.db
+desktop.ini
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 临时文件
+*.tmp
+*.temp
+"@ | Out-File -FilePath .gitignore -Encoding utf8
